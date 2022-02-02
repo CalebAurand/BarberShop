@@ -1,0 +1,93 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+}
+
+.logoContainer {
+    display: flex;
+    width: 100%;
+    margin: 10px auto;
+    padding: auto;
+}
+
+#logo {
+    margin: auto;
+}
+
+.section1 {
+    display: flex;
+    /* margin: auto; */
+}
+.posterContainer {
+    width: 960px;
+    margin: auto;
+    /* object-fit: contain; */
+}
+
+#posterBoy {
+    /* width: 960px; */
+    width: 960px;
+    object-fit: scale-down;
+
+}
+
+.section2 {
+    margin: auto;
+}
+
+div {
+    display: block;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.pixContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pix {
+    width: 95%;
+    clear: right;
+}
+
+.picTitles {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.picHead {
+    width: 17em;
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    
+    .posterContainer {
+        width: 100%;
+    }
+
+    #posterBoy {
+        width: 100%;
+        min-width: 960px;
+        object-fit: cover;
+    }
+
+    .pix {
+        width: 300px;
+    }
+}
