@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Poller+One&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index-styles.css">
+    <script src="scripts.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -13,13 +18,27 @@
             <figure class="logoContainer">
                 <img id="logo" src="images/logo.jpg" alt="logo for Mustacchio Barbershop, an upcurled handlebar moustache">
             </figure>
-                <img id="mobileButton" src="/images/mobile-menu.png" alt="mobile-menu small blue box with three bars">
+            <!-- <img id="mobileButton" src="/images/mobile-menu.png" alt="mobile-menu small blue box with three bars">
             <img id="mobileExit" src="/images/mobile-close.png" alt="mobile-exit small blue button with x mark">
-            <a>HOME</a>
-            <a>ABOUT</a>
-            <a>GALLERY</a>
-            <a>BLOG</a>
-            <a>CONTACT</a>
+             -->
+            <span id="mobileNavigation" class="mobile-nav" onclick="openMobileNav()"></span>
+            <ul id="mobileNavList" class="nav-list">
+                <li class="selected">
+                    <a class="nav-a" id="home-link" href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a class="nav-a" id="about-link" href="about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a class="nav-a" id="gallery-link" href="gallery.html">GALLERY</a>
+                </li>
+                <li>
+                    <a class="nav-a" id="blog-link" href="blog.html">BLOG</a>
+                </li>
+                <li>
+                    <a class="nav-a" id="contact-link" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -27,6 +46,14 @@
             <figure class="posterContainer">
                 <img id="posterBoy" src="images/the-beacon.jpg" alt="man sitting in truck with sunglasses and blurred background">
             </figure>
+                
+                <div>
+                    <h2>THE BEACON TO ALL MANKIND</h2>
+                    <span>Our website templates are created with</span>
+                    <span>inspiration, checked for quality and originality</span>
+                    <span>and meticulously sliced and coded.</span>
+                    <a href="blog-single-post.html" class="read-more">READ MORE</a>
+                </div>
         </section>
         <section class="section2">
             <div class="pixContainer">
