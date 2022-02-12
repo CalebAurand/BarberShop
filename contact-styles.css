@@ -4,31 +4,34 @@
     margin: 0;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    width: 100%;
-}
-
 header {
     width: 100%;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 30px;
+    text-align: center;
+}
+
 .logoContainer {
     display: flex;
-    width: 80%;
+    width: 100%;
     margin: 10px auto;
     padding: auto;
 }
 
-.logoContainer img{
-    width: 100%;
-}
-
 #logo {
     margin: auto;
+    border: none;
 }
 
+nav {
+    padding-bottom: 20px;
+}
 #mobileNavigation {
     background: url(/images/mobile-menu.png) no-repeat 0 0;
 }
@@ -83,141 +86,36 @@ header {
     background: rgba(0, 0, 0, 0.9);
     color: #fff;
 }
-
-.section1 {
-    width: 100%;
-
-    /* display: flex; */
-    /* margin: auto; */
+body h1 {
+    color: #fff;
+	display: inline;
+	font-family: 'Poller One';
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
 }
-.posterContainer {
-    width: 100%;
-    margin: 24px auto;
-    overflow: hidden;
-    /* object-fit: contain; */
-}
-
-#posterBoy {
-    /* width: 960px; */
-    /* object-fit: scale-down; */
-    display: block;
-    width: 100%;
-    min-width: 960px;
-    border: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.section1 div {
-    text-align: left;
-    left: 0;
-    top: 210px;                 /*Fix this absolute position before turn in*/
-    margin: 0;
-    padding: 0 2%;
-    position: absolute;
-    /* margin-left: -480px; */
-    /* margin-top: -41px; */
-    /* padding: 0 0 0 470px; */
-    width: 96%;
-}
-
-.section1 div h2 {
-    background: #fff;
-    color: #252525;
-    display: inline-block;
-    font-family: 'Poller One';
-    font-size: 14px;
-    font-weight: normal;
-    margin: 50px 0 10px;
-    padding: 8px 5px;
-}
-
-.section1 div span {
-    display: block;
+body h1 span {
     background: #252525;
-    color: #fff;
-    font-size: 14px;
-    font-weight: normal;
-    margin: 10px 0;
-    padding: 10px;
+    display: inline-block;
+    padding: 15px 28px 12px;
 }
-
-.section1 div a {
-    background: #0ba39c;
-    color: #fff;
-    /* display: inline-block; */
-    font-size: 14px;
-    font-weight: normal;
-    margin: 5px 0 0;
-    margin-top: 30px;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-}
-
-h2 {
-    background-color: white;
-    color: black;
-}
-
-.read-more {
-    color: white;
-    background-color: #0BA39C;
-    /* width: 100px; */
-    /* height: 34px; */
-}
-
-.section2 {
-    margin: auto;
-}
-
-.section2 ul li{
-
-}
-
-/* div {
-    display: block;
-    width: 100%;
-    margin: auto;
-    flex-wrap: wrap;
-} */
-
-.pixContainer {
-    display: block;
-    justify-content: center;
-    width: 100%;
-    margin: 24px 0;
-    font-family: 'Poller One', Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
-}
-.pixContainer figure {
-    justify-content: center;
-    margin: 0 auto;
-    margin-left: 1%;
-}
-
-.pixContainer figure a span {
-    padding: 0 33px 0 0;
-    margin: 0;
-}
-.pix {
-    width: 90%;
-    clear: right;
-    justify-content: center;
+body figure img {
     border: 2px solid black;
-    margin: 10px;
+    margin: 24px 0 0;
+    padding: 0;
+}
+main section {
+    margin: 0 auto;
+    padding: 30px 30px 0;
+    width: 560px;
+}
+body main section p {
+    margin: 0 0 30px;
 }
 
-.pix:hover {
-    color: #898989;
-}
-
-
-.picHead {
-    width: 17em;
-    text-align: center;
-}
+/* mobile footer styling here */
 footer {
     padding: 10px 0 25px;
     background: #252525;
@@ -285,26 +183,27 @@ footer ul li #pinterest:hover {
 }
 
 @media (min-width: 570px) {
-    header{
+
+    header {
         width: 960px;
         margin: 0 auto;
-        padding: 44px 0 36px;
+        padding: 44px 0 16px;
         text-align: center;
     }
+
     nav {
         width: 960px;
         margin: 0 auto;
     }
-    .logoContainer{
-        margin: 0 auto;
-        /* width: 100%; */
+
+    #mobileNavigation{
+        display: none;
     }
-    .logoContainer img{
-        width: 340px;
-    }
+
     .nav-list li {
         display: inline-block;
         border: none;
+        /* background-color: #fff; */
         margin: 0;
         padding: 0 19px;
     }
@@ -334,8 +233,8 @@ footer ul li #pinterest:hover {
         color: #0BA39C;
         background-color: #fff;
     }
-    
-    /****Body styling starts here****/
+
+    /***Body Starts Here ***/
     body{
         margin: 0;
         padding: 0 0 30px;
@@ -347,96 +246,28 @@ footer ul li #pinterest:hover {
         min-width: 960px;
 
     }
-    p {
-        color: black;
+
+    body h1 {
+        font-size: 35px;
+    }
+    body main section {
+        width: 560px;
+        padding: 30px 30px 0;
+    }
+    p{
         line-height: 24px;
         margin: 0;
         padding: 0;
+        width: 560px;
+    }
+    p a{
+        color: black;
+        text-decoration: underline;
+    }
+    p a:hover{
+        color: #898989;
     }
 
-    .posterContainer {
-        width: 100%;
-        margin-top: 0;
-    }
-    .section1 {
-        margin: 0 0 13px;
-        padding: 0;
-        position: relative;
-        width: 100%;
-    }
-    .section1 div {
-        left: 50%;
-        /* margin-left: -480px;
-        margin-top: -171px; */
-	    margin-left: -480px;
-	    margin-top: -171px;
-        padding: 0 0 0 470px;
-        position: absolute;
-        top: 50%;
-        text-align: left;
-        width: 960px;
-    }
-    .section1 div h2 {
-        font-size: 20px;
-        font-weight: normal;
-        margin: 0 0 18px;
-        padding: 23px 27px 20px;
-
-    }
-    .section1 div span {
-        font-size: 20px;
-        margin: 7px 0;
-        padding: 12px 27px;
-        display: inline-block;
-    }
-    .section1 div a{
-        background: #0ba39c;
-        color: #fff;
-        display: inline-block;
-        font-size: 16px;
-        margin: 15px 0 0;
-        padding: 26px 27px 22px;
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-    .section1 div a:hover {
-        background: #1fc3bc;
-    }
-
-    #posterBoy {
-        width: 100%;
-        min-width: 960px;
-        object-fit: cover;
-    }
-
-    .pix {
-        width: 300px;
-    }
-
-    .section2 {
-        width: 100%;
-    }
-    .pixContainer {
-        width: 960px;
-        margin: 0 auto;
-        margin-bottom: 40px;
-        padding: 24px 0 0;
-        font-family: 'Poller One', Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        font-weight: normal;
-        text-align: center;
-        display: flex;
-    }
-    .pixContainer figure a span {
-        width: 100%;
-        display: block;
-        margin: 0;
-        padding: 33px 0 0;
-    }
-    #mobileButton, #mobileExit, .mobile-nav {
-        display: none;
-    }
     footer {
         margin: 0;
         padding: 36px 0 42px;
