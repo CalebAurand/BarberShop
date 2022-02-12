@@ -16,21 +16,17 @@ header {
 
 .logoContainer {
     display: flex;
-    width: 100%;
+    width: 80%;
     margin: 10px auto;
     padding: auto;
 }
 
-a.logoContainer {
-    
+.logoContainer img{
+    width: 100%;
 }
 
 #logo {
     margin: auto;
-}
-
-.show-nav {
-    height: 10rem;
 }
 
 #mobileNavigation {
@@ -222,14 +218,89 @@ h2 {
     width: 17em;
     text-align: center;
 }
+footer {
+    padding: 10px 0 25px;
+    background: #252525;
+}
 
+footer div {
+    overflow: visible;
+    width: 100%;
+    padding: 10px 0 25px;
+}
+footer p {
+    float: none;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+footer ul {
+    float: none;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 256px;
+}
+footer ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+    width: 44px;
+
+}
+footer ul li a {
+    background: url(/images/icons.jpg) no-repeat 0 0;
+    display: block;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    text-indent: -99999px;
+    width: 44px;
+}
+footer ul li #twitter {
+    background-position: 0 0;
+}
+footer ul li #twitter:hover {
+    background-position: -44px 0;
+}
+footer ul li #facebook {
+    background-position: 0 -44px;
+}
+footer ul li #facebook:hover {
+    background-position: -44px -44px;
+}
+footer ul li #googleplus {
+    background-position: 0 -88px;
+}
+footer ul li #googleplus:hover {
+    background-position: -44px -88px;
+}
+footer ul li #pinterest {
+    background-position: 0 -132px;
+}
+footer ul li #pinterest:hover {
+    background-position: -44px -132px;
+}
 
 @media (min-width: 570px) {
     header{
         width: 960px;
         margin: 0 auto;
-        padding: 44px 0 56px;
+        padding: 44px 0 36px;
         text-align: center;
+    }
+    nav {
+        width: 960px;
+        margin: 0 auto;
+    }
+    .logoContainer{
+        margin: 0 auto;
+        /* width: 100%; */
+    }
+    .logoContainer img{
+        width: 340px;
     }
     .nav-list li {
         display: inline-block;
@@ -243,7 +314,7 @@ h2 {
         border: none;
         position: sticky;
         margin: 0;
-        padding: 56px 0 0;
+        padding: 36px 0 0;
         text-align: center;
     }
 
@@ -285,6 +356,7 @@ h2 {
 
     .posterContainer {
         width: 100%;
+        margin-top: 0;
     }
     .section1 {
         margin: 0 0 13px;
@@ -378,11 +450,13 @@ h2 {
         width: 960px;
     }
     footer p {
-        display: inline-block;
+        /* display: inline-block; */
+        float: left;
         color: #fff;
         line-height: 44px;
         margin: 0 0 0 10px;
         padding: 0;
+        width: 276px;
     }
     footer ul {
         display: block;
