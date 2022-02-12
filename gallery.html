@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="gallery-styles.css">
 </head>
 <body><!--start of the body section-->
     <header> <!--start of the header section-->
@@ -12,17 +13,15 @@
             <figure class="logoContainer">
                 <img id="logo" src="images/logo.jpg" alt="logo for Mustacchio Barbershop, an upcurled handlebar moustache">
             </figure>
-                <img id="mobileButton" src="/images/mobile-menu.png" alt="mobile-menu small blue box with three bars">
-            <img id="mobileExit" src="/images/mobile-close.png" alt="mobile-exit small blue button with x mark">
             <span id="mobileNavigation" class="mobile-nav" style="background-image: url('/images/mobile-menu.png');" onclick="openMobileNav()"></span>
             <ul id="mobileNavList" class="nav-list">
-                <li class="selected">
+                <li>
                     <a class="nav-a" id="home-link" href="index.html">HOME</a>
                 </li>
                 <li>
                     <a class="nav-a" id="about-link" href="about.html">ABOUT</a>
                 </li>
-                <li>
+                <li class="selected">
                     <a class="nav-a" id="gallery-link" href="gallery.html">GALLERY</a>
                 </li>
                 <li>
@@ -35,11 +34,30 @@
         </nav>
     </header>
     <main> <!--start of the main section-->
-
+        <p>Content Coming Soon!</p>
     </main>
     <footer> <!--start of the footer section-->
-        <img class="socialMedia-img" src="images/icons.jpg" alt="icons for social media, facebook, twitter, google, pinterest">
+        <div><!-- <img class="socialMedia-img" src="images/icons.jpg" alt="icons for social media, facebook, twitter, google, pinterest"> -->
+            <p>
+                © 2023 by Mustacchio. All rights reserved.
+            </p>
+            <ul>
+                <li>
+                    <a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
+                </li>
+                <li>
+                    <a href="http://freewebsitetemplates.com/go/facebook/" id="facebook"></a>
+                </li>
+                <li>
+                    <a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus"></a>
+                </li>
+                <li>
+                    <a href="http://freewebsitetemplates.com/go/pinterest/" id="pinterest"></a>
+                </li>
+            </ul>
+        </div>
     </footer>
-    
+    <script src="scripts.js"></script>
+
 </body>
 </html>
